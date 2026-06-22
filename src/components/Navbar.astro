@@ -1,0 +1,44 @@
+---
+import logo from "../assets/nav/logo.png";
+---
+<!-- Menú DESKTOP -->
+<nav class="w-full absolute top-0 left-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-24">
+
+      <!-- Menú Izquierda -->
+      <div class="flex items-center gap-16">
+        <a href="/" class="text-white font-semibold tracking-wide hover:text-blue-300 transition">
+          INICIO
+        </a>
+
+        <a href="/nosotros" class="text-white font-semibold tracking-wide hover:text-blue-300 transition">
+          NOSOTROS
+        </a>
+      </div>
+
+      <div class="absolute left-1/2 -translate-x-1/2">
+        <img
+          src={logo.src}
+          alt="Grupo Ajaw"
+          class="h-16 w-auto"
+        />
+      </div>
+
+      <!-- Menú Derecha -->
+      <div class="flex items-center gap-16">
+        <a href="/partner" class="text-white font-semibold tracking-wide hover:text-blue-300 transition">
+          BE PARTNER
+        </a>
+
+        <a
+          href="/app"
+          class="bg-white text-blue-900 font-bold px-8 py-3 rounded-full hover:scale-105 transition"
+        >
+          APP
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
