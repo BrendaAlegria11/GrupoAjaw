@@ -1,11 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import heroImage from "../assets/inicio/fondoinicio.png";
+import img_seccion2 from "../assets/inicio/seccion2.png";
 ---
 
 <MainLayout>
 
-<section class="relative min-h-screen overflow-hidden">
+<section class="relative min-h-screen overflow-hidden border border">
 
   <!-- Fondo -->
   <div class="absolute inset-0">
@@ -45,10 +46,31 @@ import heroImage from "../assets/inicio/fondoinicio.png";
         Conoce más
       </a>
     </div>
-
   </div>
 
+  
 
 </section>
+
+<!--SECCION 2 QUIENES SOMOS -->
+<div class="flex flex-col items-center">
+  <div class="w-4/5 grid grid-cols-1 md:grid-cols-2 gap-10 md:mt-20 border border">
+    <div>
+      <h1 class="text-textos text-5xl font-bold tracking-wider md:mb-7">¿Quiénes <span class="text-titulos">Somos?</span></h1>
+      <div class="border border-white w-30 md:mb-10"></div>
+      <p class="text-textos text-lg/8 font-normal tracking-wide">En Grupo Ajaw Ingeniería reunimos talento, experiencia y especialización para brindar soluciones completas en el sector de ingeniería y servicios técnicos.<br/>
+      Somos un grupo empresarial conformado por distintas unidades de negocio que trabajan de manera coordinada, permitiéndonos ofrecer un servicio integral, competitivo y de alto valor para nuestros clientes.
+      </p>
+      <div class="border border-titulos md:mt-10 h-20">
+
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <img src={img_seccion2.src} alt="imagen 1" class="">
+
+    </div>
+  </div>
+</div>
+
 
 </MainLayout>
