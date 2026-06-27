@@ -1,0 +1,81 @@
+---
+import mapa from "../../assets/seccion1/mapa2.png";
+import logo from "../../assets/seccion1/logo.png";
+import logo1 from "../../assets/seccion1/logo1.png";
+import logo2 from "../../assets/seccion1/logo2.png";
+import logo3 from "../../assets/seccion1/logo3.png";
+import logo4 from "../../assets/seccion1/logo4.png";
+import logo5 from "../../assets/seccion1/logo5.png";
+import elemento1 from "../../assets/seccion1/elemento1.png";
+import elemento2 from "../../assets/seccion1/elemento2.png";
+import elemento3 from "../../assets/seccion1/elemento3.png";
+---
+
+
+<section class="flex justify-center relative w-full overflow-hidden md:mb-10">
+    <img src={elemento1.src} class="absolute top-0 right-0 z-11 w-20 md:w-64 pointer-events-none" />
+    <img src={elemento2.src} class="absolute top-10 -left-12 z-0 w-48 md:w-80 pointer-events-none" />
+    <img src={elemento3.src} class="absolute top-200 md:top-150 right-0 z-0 w-30 md:w-55 pointer-events-none" />
+  
+    <div class="w-4/5 relative z-10">
+        <!--MAPA Y LOGO -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="flex flex-col justify-center items-center text-center md:items-start md:text-start my-10 md:my-0">
+                <img src={logo.src} alt="logo Grupo Ajaw" class="w-3/5 mb-8 z-0">
+                <p class="text-textos text-base md:text-xl font-medium">Una empresa especializada en ingeniería y mantenimiento industrial 
+                    enfocada en el sector <span class="text-titulos font-semibold">HORECA</span> (hoteles, restaurantes, catering y comedores industriales).<br><br>
+                    Su misión es mejorar la eficiencia operativa de estos negocios, 
+                    aspirando a ser un <span>socio estratégico</span> para marcas premium a nivel nacional e internacional.</p>
+                <a href="#" class="border border-titulos-600 text-titulos font-bold py-2 px-10 rounded-xl mt-10 hover:bg-titulos hover:text-white">CONTACTANOS</a>
+            </div>
+            <div>
+                <img src={mapa.src} alt="Mapa" draggable="false">
+            </div>
+        </div>
+
+        <!--LOGOS EMPRESAS -->
+        <div>
+            <fieldset class="border-2 border-titulos rounded-2xl text-center p-6 mt-10">
+                <legend class="text-titulos font-bold md:text-2xl px-5 mx-auto md:tracking-wider">
+                NUESTRAS EMPRESAS
+                </legend>
+                
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center md:py-10">
+      
+                    <!--Koonol MX -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" 
+                        class="transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+                        <img src={logo1.src} alt="Koonol MX" class="h-20 w-auto object-contain" />
+                    </a>
+
+                    <!--Ajaw Ingeniería -->
+                    <a href="https://ajaw.com.mx" target="_blank" rel="noopener noreferrer" 
+                        class="transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+                        <img src={logo2.src} alt="Ajaw Ingeniería" class="h-15 w-auto object-contain" />
+                    </a>
+
+                    <!-- HBL -->
+                    <a href="https://horecabl.com.mx" target="_blank" rel="noopener noreferrer" 
+                        class="transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+                        <img src={logo3.src} alt="HBL" class="h-15 w-auto object-contain" />
+                    </a>
+
+                    <!-- Iktantech -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" 
+                        class="transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+                        <img src={logo4.src} alt="Iktantech" class="h-15 w-auto object-contain" />
+                    </a>
+
+                    <!-- Simma -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" 
+                        class="transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+                        <img src={logo5.src} alt="Simma" class="h-15 w-auto object-contain" />
+                    </a>
+
+                    </div>
+                
+            </fieldset>
+        </div>
+    </div>
+    
+</section>
