@@ -1,0 +1,107 @@
+---
+import logo1 from "../../assets/seccion3/logo1.png";
+import logo2 from "../../assets/seccion3/logo2.png";
+import logo3 from "../../assets/seccion3/logo3.png";
+import logo4 from "../../assets/seccion3/logo4.png";
+import logo5 from "../../assets/seccion3/logo5.png";
+import logo6 from "../../assets/seccion3/logo6.png";
+import logo7 from "../../assets/seccion3/logo7.png";
+import circulo from "../../assets/inicio/s2-elemento1.png";
+import puntos from "../../assets/seccion3/puntos.png";
+---
+
+<section class="flex justify-center py-20">
+    <div class="w-4/5">
+        <!-- Decoración Circulo -->
+        <img
+            src={circulo.src}
+            class="absolute left-0 top-470 w-36 -z-10"
+            alt=""
+        />
+
+        <!-- Decoración derecha -->
+        <img
+            src={puntos.src}
+            class="absolute right-60 top-540 w-24 -z-10"
+            alt=""
+        />
+        <!-- Decoración izquierda -->
+        <img
+            src={puntos.src}
+            class="absolute left-20 top-600 w-24 -z-10"
+            alt=""
+        />
+
+        <div>
+            <h2 class="text-center text-2xl md:text-4xl  font-bold text-titulos uppercase">
+                Marcas Colaboradoras
+            </h2>
+
+            <p class="text-center font-medium text-textos text-base md:text-xl max-w-xl mx-auto mt-6 leading-8">
+                Para garantizar soluciones de alta calidad y vanguardia,
+                colaboramos y damos soporte a las principales
+                <span class="font-bold text-titulos"> marcas líderes </span>
+                del sector HORECA.
+            </p>
+
+            <div class="overflow-hidden mt-20 relative">
+                <div class="logos-track">
+                    <!-- Primera vuelta -->
+                    <img src={logo7.src} class="h-15 object-contain" />
+                    <img src={logo1.src} class="h-12 object-contain" />
+                    <img src={logo2.src} class="h-12 object-contain" />
+                    <img src={logo3.src} class="h-12 object-contain" />
+                    <img src={logo4.src} class="h-12 object-contain" />
+                    <img src={logo5.src} class="h-12 object-contain" />
+                    <img src={logo6.src} class="h-12 object-contain" />
+
+                    <!-- Segunda vuelta (duplicados) -->
+                    <img src={logo7.src} class="h-15 object-contain" />
+                    <img src={logo1.src} class="h-12 object-contain" />
+                    <img src={logo2.src} class="h-12 object-contain" />
+                    <img src={logo3.src} class="h-12 object-contain" />
+                    <img src={logo4.src} class="h-12 object-contain" />
+                    <img src={logo5.src} class="h-12 object-contain" />
+                    <img src={logo6.src} class="h-12 object-contain" />
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-3 mt-10">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex justify-center items-center text-titulos" >
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+
+                <p class="text-textos text-base md:text-xl font-medium ">
+                    Así como equipos personalizados de <span
+                        class="font-bold text-titulos"
+                    >
+                        Fabricación Especial</span
+                    >
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .logos-track {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        width: max-content;
+        animation: scroll 30s linear infinite;
+    }
+
+    .logos-track img {
+        flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+</style>

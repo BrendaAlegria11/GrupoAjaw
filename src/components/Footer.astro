@@ -1,0 +1,151 @@
+---
+import logo from "../assets/footer/hbl-blanco.png";
+import logoHBL from "../assets/footer/hbl.png";
+import footerBg from "../assets/footer/fondoo.png";
+---
+<footer class="relative overflow-hidden">
+
+  <!-- Fondo -->
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style={`background-image:url(${footerBg.src})`}
+  ></div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 w-4/5 mx-auto py-16">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+
+      <!-- Logo -->
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+        <img
+          src={logo.src}
+          alt="Grupo Ajaw"
+          class="w-40 lg:w-48 mb-8"
+        />
+
+        <div class="flex gap-5 text-white text-2xl">
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Menú -->
+      <div class="text-center lg:text-left">
+
+        <ul class="space-y-4 uppercase text-white font-semibold tracking-wide">
+
+          <li><a href="/">Inicio</a></li>
+
+          <li><a href="/nosotros">Nosotros</a></li>
+
+          <li><a href="/partner">Be Partner</a></li>
+
+          <li><a href="/app">App</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Contacto -->
+      <div class="space-y-5 text-white">
+
+        <div class="flex justify-center lg:justify-start items-start gap-4">
+
+          <i class="fa-solid fa-phone mt-1 text-xl"></i>
+
+          <span>+52 442 454 0557</span>
+
+        </div>
+
+        <div class="flex justify-center lg:justify-start items-start gap-4">
+
+          <i class="fa-regular fa-envelope mt-1 text-xl"></i>
+
+          <span class="break-all lg:break-normal">
+            contactomx@ajaw.com.mx
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- Oficinas -->
+      <div class="space-y-8 text-white">
+
+        <div class="flex items-start gap-4">
+
+          <i class="fa-solid fa-location-dot text-xl mt-1 shrink-0"></i>
+
+          <div>
+
+            <h4 class="font-bold">
+              Oficina de Querétaro
+            </h4>
+
+            <p class="text-sm text-white/80 leading-6">
+              Camino al Cerrito N1, Local 1A El Pueblito,
+              76900, Querétaro, Qro.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-start gap-4">
+
+          <i class="fa-solid fa-location-dot text-xl mt-1 shrink-0"></i>
+
+          <div>
+
+            <h4 class="font-bold">
+              Oficina de Guadalajara
+            </h4>
+
+            <p class="text-sm text-white/80 leading-6">
+              C. Miguel de Cervantes Saavedra 86-C y D
+              Col. Americana, 44140, Guadalajara, Jal.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-white/20 mt-12 pt-6 text-center text-white/70 text-sm">
+      © Copyright 2026 AJAW Ingeniería. Todos los Derechos Reservados.
+    </div>
+
+  </div>
+
+  <!-- Barra inferior -->
+  <div class="relative z-10 bg-[#F3F1F3] py-4">
+
+    <div class="w-4/5 mx-auto flex flex-col sm:flex-row justify-center items-center gap-2 text-titulos font-semibold text-sm">
+
+      <span>DISEÑO Y DESARROLLO WEB</span>
+
+      <img
+        src={logoHBL.src}
+        alt="HBL"
+        class="h-8 w-auto"
+      />
+
+    </div>
+
+  </div>
+
+</footer>
