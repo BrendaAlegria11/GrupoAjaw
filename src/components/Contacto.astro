@@ -1,0 +1,96 @@
+---
+import imagen1 from "../assets/contacto/imagen1.png";
+import imagen2 from "../assets/contacto/imagen2.png";
+import info from "../assets/contacto/imagen-info.png";
+import icon1 from "../assets/contacto/icon1.png";
+import icon2 from "../assets/contacto/icon2.png";
+import icon3 from "../assets/contacto/icon3.png";
+---
+
+
+<section class="flex justify-center relative w-full overflow-hidden">
+    <img src={imagen1.src} class="absolute top-0 left-0 z-0 w-20 md:w-64 pointer-events-none" />
+    <img src={imagen2.src} class="absolute top-0 right-100 z-0 w-20 md:w-30 pointer-events-none" />
+
+
+    <div class="w-4/5 relative z-10 mt-10 md:mt-0 md:mb-20">
+        <h1 class="text-titulos text-2xl md:text-4xl font-bold py-5 md:py-20">CONTÁCTANOS AHORA</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <input type="text" placeholder="Nombre" class="w-full p-3 border border-titulos rounded-md text-titulos">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Empresa" class="w-full p-3 border border-titulos rounded-md text-titulos">
+                </div>
+
+                <div>
+                    <input type="tel" placeholder="Teléfono" class="w-full p-3 border border-titulos rounded-md text-titulos">
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Correo electrónico" class="w-full p-3 border border-titulos rounded-md text-titulos">
+                </div>
+
+                <div class="md:col-span-2">
+                    <textarea placeholder="Cuéntanos sobre tu proyecto" rows="5" class="w-full p-3 border border-titulos rounded-md text-titulos"></textarea>
+                </div>
+
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full p-3 text-center text-white   uppercase font-bold bg-titulos">
+                    Enviar información
+                    </button>
+                </div>
+            </form>
+    
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+                        
+                    <!-- Tarjeta de Contacto -->
+                    <div class="border border-titulos p-8 md:p-12 md:mr-[-4rem] rounded-l-lg z-10">
+                    <div class="space-y-6 text-titulos">
+                        
+                            <!-- Llámanos -->
+                        <div class="flex items-center gap-4">
+                            <img src={icon1.src} alt="" class="w-6 h-6">
+                            <div>
+                                <h3 class="font-bold text-lg">Llámanos</h3>
+                                <p class="text-sm opacity-90">+52 442 454 0557</p>
+                            </div>
+                        </div>
+
+                        <!-- Escríbenos -->
+                        <div class="flex items-center gap-4">
+                            <img src={icon2.src} alt="" class="w-6 h-6">
+                            <div>
+                                <h3 class="font-bold text-lg">Escríbenos</h3>
+                                <p class="text-sm opacity-90">contacto@ajaw.com.mx</p>
+                            </div>
+                        </div>
+
+                        <!-- Horario -->
+                        <div class="flex items-center gap-4">
+                            <img src={icon3.src} alt="" class="w-6 h-6">
+                            <div>
+                                <h3 class="font-bold text-lg">Horario</h3>
+                                <p class="text-sm opacity-90">Lunes a Viernes</p>
+                                <p class="text-sm opacity-90">09:00am - 06:00pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+
+                    <div class="w-[300px] h-[20px] right-0 min-h-[370px] z-20 md:absolute mb-10 md:mb-0">
+                    <img 
+                        src={info.src}
+                        alt="Trabajador" 
+                        class="w-full h-full object-cover rounded-2xl shadow-md"
+                    />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
