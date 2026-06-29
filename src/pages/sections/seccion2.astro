@@ -1,12 +1,24 @@
 ---
 import icono from "../../assets/inicio/s2-elemento1.png";
 import imagen from "../../assets/inicio/s2-elemento2.png";
+import circulo from "../../assets/inicio/s2-elemento1.png";
+import puntos from "../../assets/seccion3/puntos.png";
 ---
 
-
 <section>
+    <div class="mx-auto py-15 w-4/5 mt-5 lg:mt-20">
+        <!-- Decoración Circulo -->
+        <img
+            src={circulo.src}
+            class="absolute left-0 top-620 lg:top-580 w-24 lg:w-40 -z-10"
+        />
+        <!-- Decoración derecha -->
+        <img
+            src={puntos.src}
+            class="absolute left-68 lg:left-150 top-530 lg:top-505 w-20 lg:w-30 -z-10"
+            alt=""
+        />
 
-    <div class="mx-auto py-20 w-4/5 mt-30">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <!-- IZQUIERDA -->
             <div class="relative">
@@ -24,13 +36,16 @@ import imagen from "../../assets/inicio/s2-elemento2.png";
                         >
                             <i class="fa-solid fa-bullseye text-2xl"></i>
                         </div>
-
                         <div>
-                            <h3 class="text-2xl md:text-4xl  font-bold text-titulos mb-3">
+                            <h3
+                                class="text-2xl md:text-4xl font-bold text-titulos mb-3"
+                            >
                                 Nuestra Misión
                             </h3>
 
-                            <p class="text-textos text-base md:text-xl font-medium leading-8 max-w-lg text-justify">
+                            <p
+                                class="text-textos text-base md:text-xl font-medium leading-5 lg:leading-7 max-w-lg text-justify"
+                            >
                                 Ayudamos a que negocios del sector HORECA operen
                                 de manera más eficiente con soluciones en
                                 ingeniería y mantenimiento industrial.
@@ -48,11 +63,15 @@ import imagen from "../../assets/inicio/s2-elemento2.png";
                         </div>
 
                         <div>
-                            <h3 class="text-2xl md:text-4xl  font-bold text-titulos mb-3">
+                            <h3
+                                class="text-2xl md:text-4xl font-bold text-titulos mb-3"
+                            >
                                 Nuestra Visión
                             </h3>
 
-                            <p class="text-textos text-base md:text-xl font-medium  leading-8 max-w-lg text-justify">
+                            <p
+                                class="text-textos text-base md:text-xl font-medium leading-5 lg:leading-7 max-w-lg text-justify"
+                            >
                                 Ser el socio estratégico en marcas premium y la
                                 primera opción para distribuidores y agencias de
                                 servicio en México y el mundo.
@@ -70,12 +89,14 @@ import imagen from "../../assets/inicio/s2-elemento2.png";
                         </div>
 
                         <div>
-                            <h3 class="text-2xl md:text-4xl font-bold text-titulos mb-4">
+                            <h3
+                                class="text-2xl md:text-4xl font-bold text-titulos mb-4"
+                            >
                                 Nuestros Valores
                             </h3>
 
                             <div
-                                class="flex flex-wrap gap-x-5 gap-y-3 text-[#D89A2B] text-base md:text-xl font-medium  "
+                                class="leading-3 lg:leading-7 flex flex-wrap gap-x-5 gap-y-3 text-[#D89A2B] text-base md:text-xl font-medium"
                             >
                                 <span>Lealtad</span>
                                 <span>Respeto</span>
@@ -94,11 +115,9 @@ import imagen from "../../assets/inicio/s2-elemento2.png";
                 <img
                     src={imagen.src}
                     alt="Grupo Ajaw"
-                    class="rounded-3xl shadow-2xl w-[400] h-[500px] object-cover"
+                    class="rounded-3xl shadow-2xl w-[450px] h-[280px] md:h-[360px] lg:h-[460px] object-cover"
                 />
             </div>
         </div>
     </div>
 </section>
-
-<!-- MARCAS -->
