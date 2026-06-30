@@ -1,86 +1,42 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import Contacto from "../components/Contacto.astro";
-import Seccion1 from "../pages/sections/seccion1.astro";
-import Seccion2 from "./sections/seccion2.astro";
-import Seccion3 from "./sections/seccion3.astro";
-import Seccion4 from "../pages/sections/seccion4.astro";
-import Seccion5 from "./sections/seccion5.astro";
+import '../styles/global.css';
+import grupoLogo from '../assets/seccion1/logo.png'
+import ajawLogo from '../assets/seccion1/logo2.png'
 
-
-import heroImage from "../assets/inicio/fondoinicio.png";
-
+const urlAjaw = "https://ajaw.com.mx";
 ---
 
-<MainLayout>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+    <title>Acceso - Ajaw</title>
+  </head>
 
-<section class="relative min-h-screen overflow-hidden border border">
+  <body class="flex flex-col items-center justify-center h-screen w-full bg-no-repeat bg-center bg-cover bg-[url('../assets/accessPageMovil.png')] md:bg-[url('../assets/accessPage.png')]">
+    
 
-  <!-- Fondo -->
-  <div class="absolute inset-0">
-    <img
-      src={heroImage.src}
-      alt="Equipo"
-      class="w-full h-full object-cover"
-    />
-  </div>
-
-
-  <!-- Contenido -->
-  <div class="relative z-10 max-w-7xl mx-auto px-2 min-h-screen flex items-center">
-    <div class="w-full lg:w-1/2 text-white">
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-        Experiencia e
-        <br />
-        innovación en
-        <br />
-        acción.
-      </h1>
-
-      <p class="text-lg text-gray-300 max-w-md mb-10">
-        Impulsamos el crecimiento de nuestros clientes con
-        tecnología y talento especializado.
-      </p>
-      <a
-        href="#"
-        class="inline-flex items-center justify-center
-               px-10 py-4
-               border border-white
-               rounded-full
-               text-lg font-semibold
-               hover:bg-white hover:text-[#001133]
-               transition-all duration-300"
-      >
-        Conoce más
-      </a>
-    </div>
-  </div>
-
-  
-
-</section>
+    <main class="">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-500 text-center">Elige a que página quieres ingresar:</h2>
+      
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <a href="/grupo" class="">
+          <img src={grupoLogo.src} alt="" class="w-45 md:w-50 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+        </a>
 
 
+        
+        <a href="{urlAjaw}" class="">
+          <img src={ajawLogo.src} alt="" class="w-50 md:w-70 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+        </a>
+      </div>
+    </main>
 
-
-<!--SECCION 1  -->
-<Seccion1/>
-
-<!--SECCION 2  -->
-<Seccion2 />
-
-<!--SECCION 3  -->
-<Seccion3 />
-
-<!--SECCION 4  -->
-<Seccion4/>
-
-<!--SECCION 5  -->
-<Seccion5 />
-
-
-<Contacto/>
-
-
-
-</MainLayout>
+  </body>
+</html>
