@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import grupoLogo from '../assets/seccion1/logo.png'
 import ajawLogo from '../assets/seccion1/logo2.png'
+import izqFlecha from '../assets/iconFlecha.png'
+import icon from '../assets/icon.png'
 
 const urlAjaw = "https://ajaw.com.mx/inicio";
 ---
@@ -23,15 +25,50 @@ const urlAjaw = "https://ajaw.com.mx/inicio";
     
 
     <main class="">
-      <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-500 text-center">Elige a que página quieres ingresar:</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-10 md:mb-15 text-gray-500 text-center">Elige a que página quieres ingresar:</h2>
       
-      <div class="flex flex-col md:flex-row gap-10 items-center">
-        <a href="/grupo" class="">
-          <img src={grupoLogo.src} alt="" class="w-45 md:w-50 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
-        </a>
-        <a href={urlAjaw} class="">
-          <img src={ajawLogo.src} alt="" class="w-50 md:w-70 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
-        </a>
+      <div class="group relative flex flex-col md:flex-row items-center gap-10 md:gap-25">
+        <div class="flex- flex-col items-center justify-center">
+          <a href="/grupo" id="link-izq" class="z-10">
+            <img src={grupoLogo.src} alt="" class="w-45 md:w-45 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+          </a>
+          <div class="flex items-center justify-center">
+            <p class="text-[#599BC4] text-xl md:mt-20 absolute opacity-0 pointer-events-none group-has-[#link-izq:hover]:opacity-100">www.grupoajaw.com</p>
+          </div>
+        </div>
+        
+
+
+        <!-- Contenedor de Iconos -->
+        <div class="flex items-center justify-center min-w-[60px] h-10 relative">
+          <div class="group-has-[#link-izq:hover]:opacity-0 group-has-[#link-der:hover]:opacity-0 ">
+            <div class="h-13 w-13 bg-[#599BC4] rounded-full flex items-center justify-center">
+              <img src={icon.src} alt="" class="w-2 h-2">
+            </div>
+          </div>
+
+          <div class="absolute opacity-0 pointer-events-none group-has-[#link-izq:hover]:opacity-100">
+            <div class="h-13 w-13 bg-[#599BC4] rounded-full flex items-center justify-center">
+              <img src={izqFlecha.src} alt="" class="w-8 h-4 rotate-180">
+            </div>
+          </div>
+
+          <div class="absolute opacity-0 pointer-events-none group-has-[#link-der:hover]:opacity-100">
+            <div class="h-13 w-13 bg-[#599BC4] rounded-full flex items-center justify-center">
+              <img src={izqFlecha.src} alt="" class="w-8 h-4">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href={urlAjaw} id="link-der" class="z-10">
+            <img src={ajawLogo.src} alt="" class="w-50 md:w-68 transform transition-all duration-300 ease-in-out filter md:grayscale md:opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110">
+            <div class="flex items-center justify-center">
+              <p class="text-[#599BC4] text-xl md:mt-20 absolute opacity-0 pointer-events-none group-has-[#link-der:hover]:opacity-100">www.ajaw.com.mx</p>
+            </div>
+          </a>
+        </div>
+        
       </div>
     </main>
 
