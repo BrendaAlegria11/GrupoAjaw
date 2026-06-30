@@ -2,8 +2,9 @@
 import '../styles/global.css';
 import grupoLogo from '../assets/seccion1/logo.png'
 import ajawLogo from '../assets/seccion1/logo2.png'
+import icono from "../assets/iconopuerta.png";
 import izqFlecha from '../assets/iconFlecha.png'
-import icon from '../assets/icon.png'
+import icon from '../assets/icono.png'
 
 const urlAjaw = "https://ajaw.com.mx/inicio";
 ---
@@ -14,6 +15,7 @@ const urlAjaw = "https://ajaw.com.mx/inicio";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href={icono.src} />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
@@ -25,7 +27,7 @@ const urlAjaw = "https://ajaw.com.mx/inicio";
     
 
     <main class="">
-      <h2 class="text-xl md:text-2xl font-semibold mb-10 md:mb-15 text-gray-500 text-center">Elige a que página quieres ingresar:</h2>
+      <h2 class="shine animar text-xl md:text-2xl font-semibold mb-10 md:mb-15 text-gray-500 text-center">Elige a que página quieres ingresar:</h2>
       
       <div class="group relative flex flex-col md:flex-row items-center gap-10 md:gap-25">
         <div class="flex- flex-col items-center justify-center">

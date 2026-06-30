@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro"
 import "../styles/global.css";
-import icono from "../assets/iconogrupo.png";
+import icono from "../assets/icono.png";
 ---
 
 <!doctype html>
@@ -47,3 +47,23 @@ import icono from "../assets/iconogrupo.png";
 	
 	/*HACER CLASES PARA REUTILIZAR */
 </style>
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.25,
+    }
+  );
+
+  document.querySelectorAll(".animar").forEach((el) => {
+    observer.observe(el);
+  });
+</script>

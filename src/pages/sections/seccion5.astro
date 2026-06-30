@@ -27,28 +27,28 @@ const clientes = [
 ---
 
 
-<section class="flex justify-center mt-10 overflow-hidden ">
+<section class="flex justify-center mt-10 lg:mt-20 overflow-hidden ">
       <!-- Decoración Circulo -->
         <img
             src={circulo.src}
-            class="absolute left-0 top-985 lg:top-950 w-25 lg:w-50 -z-10"
+            class=" float animar absolute left-0 top-985 lg:top-950 w-25 lg:w-50 -z-10"
             alt=""
         /> <!-- Decoración izquierda -->
         <img
             src={puntos.src}
-            class="absolute rigt-200 lg:right-155 top-1010 lg:top-945 w-15 lg:w-30 -z-10 "
+            class="float animar  absolute rigt-200 lg:right-155 top-1010 lg:top-945 w-15 lg:w-30 -z-10 "
             alt=""
         />
         <!-- Decoración derecha superior -->
         <img
             src={recuadro.src}
-            class="absolute right-0 top-980 lg:top-930 w-30 lg:w-70  -z-10 "
+            class="absolute right-0 top-100 lg:top-930 w-30 lg:w-70  -z-10 "
             alt=""
         />
         <!-- Decoración derecha inferior -->
         <img
             src={circulo2.src}
-            class="absolute right-0 top-1120 lg:top-1010 w-40 lg:w-70 -z-10"
+            class="float animar  absolute right-0 top-1120 lg:top-1010 w-40 lg:w-70 -z-10"
             alt=""
         />
 
@@ -56,11 +56,11 @@ const clientes = [
 
     <!-- Título -->
     <div>
-      <h2 class="text-titulos text-2xl md:text-4xl  font-bold uppercase">
+      <h2 class="slideLeft animar text-titulos text-2xl md:text-4xl  font-bold uppercase">
         Nuestros Clientes
       </h2>
 
-      <p class="text-textos text-base md:text-xl font-medium mt-3 mb-5 lg:mb-5">
+      <p class="fadeUp animar text-textos text-base md:text-xl font-medium mt-3 mb-5 lg:mb-5">
         Nuestros clientes no solo son empresas; son experiencias que le dan vida al sector HORECA.
       </p>
     </div>
@@ -69,47 +69,47 @@ const clientes = [
     <div class="hidden lg:block relative h-[620px]">
 
       <!-- IHOP -->
-      <div class="z-30 absolute left-35 top-25 w-55 h-34 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom z-30 absolute left-35 top-25 w-55 h-34 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={ihop.src} alt="IHOP" class="w-36" />
       </div>
 
       <!-- SODEXO -->
-      <div class="absolute left-85 top-10 w-60 h-30 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute left-85 top-10 w-60 h-30 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={sodexo.src} alt="Sodexo" class="w-40" />
       </div>
 
       <!-- CENTRAL CHEF -->
-      <div class="z-30 absolute right-72 top-10 w-50 h-40 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom z-30 absolute right-72 top-10 w-50 h-40 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={centralchef.src} alt="Central Chef" class="w-40" />
       </div>
 
       <!-- PROESA -->
-      <div class="absolute left-85 top-48 w-55 h-32 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute left-85 top-48 w-55 h-32 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={proesa.src} alt="Proesa" class="w-36" />
       </div>
 
       <!-- FURI -->
-      <div class="absolute left-[540px] top-35 w-50 h-40 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute left-[540px] top-35 w-50 h-40 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={furi.src} alt="Furi" class="w-35" />
       </div>
 
       <!-- CHEFTOP -->
-      <div class="absolute right-40 top-56 w-70 h-40 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute right-40 top-56 w-70 h-40 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={cheftop.src} alt="Cheftop" class="w-40" />
       </div>
 
       <!-- GASTROMAX -->
-      <div class="absolute left-45 bottom-52 w-50 h-28 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)]  flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute left-45 bottom-52 w-50 h-28 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)]  flex items-center justify-center hover:-translate-y-2 transition">
         <img src={gastromax.src} alt="Gastromax" class="w-36" />
       </div>
 
       <!-- W -->
-      <div class="z-30 absolute left-105 bottom-35 w-40 h-35 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.30)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom z-30 absolute left-105 bottom-35 w-40 h-35 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.30)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={w.src} alt="W" class="w-20" />
       </div>
 
       <!-- INNOVA -->
-      <div class="absolute left-[560px] bottom-40 w-60 h-35 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
+      <div class="logoAnim animar zoom absolute left-[560px] bottom-40 w-60 h-35 bg-[#5E97C2] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.45)] flex items-center justify-center hover:-translate-y-2 transition">
         <img src={innova.src} alt="Innova" class="w-40" />
       </div>
 

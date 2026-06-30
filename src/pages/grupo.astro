@@ -18,7 +18,7 @@ import heroImage from "../assets/inicio/fondoinicio.png";
       <img
         src={heroImage.src}
         alt="Equipo"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover animacion-fondo"
       />
     </div>
 
@@ -30,19 +30,19 @@ import heroImage from "../assets/inicio/fondoinicio.png";
       class="relative z-10 max-w-7xl mx-auto h-full flex items-center justify-center lg:justify-start w-4/5"
     >
       <div class="text-white">
-        <h1 class="text-5xl md:text-6xl font-bold mt-20 mb-6">
+        <h1 class="izquierda text-5xl md:text-6xl font-bold mt-20 mb-6">
           Experiencia e
           <br />
           innovación en <br class="hidden lg:block" /> acción.
         </h1>
 
-        <p class="text-base md:text-xl font-mediumtext-gray-300 max-w-md mb-10">
+        <p class="animar  text-base md:text-xl font-mediumtext-gray-300 max-w-md mb-10">
           Impulsamos el crecimiento de nuestros clientes con tecnología y
           talento especializado.
         </p>
         <a
           href="#"
-          class="inline-flex items-center justify-center
+          class="zoom inline-flex items-center justify-center
          px-6 py-3 lg:px-10 lg:py-4
          border border-white
          rounded-full
@@ -74,3 +74,78 @@ import heroImage from "../assets/inicio/fondoinicio.png";
   <!--SECCION CONTACTO -->
   <Contacto />
 </MainLayout>
+<style>
+
+.animar {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .8s ease;
+}
+
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.izquierda {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all .8s ease;
+}
+
+.izquierda.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.derecha {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all .8s ease;
+}
+
+.derecha.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom {
+  opacity: 0;
+  transform: scale(.2);
+  transition: all .8s ease;
+}
+
+.zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animacion-fondo {
+  animation: aparecer 1.5s ease-out forwards;
+}
+</style>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll(".animar, .izquierda, .derecha, .zoom")
+    .forEach((el) => observer.observe(el));
+</script>
